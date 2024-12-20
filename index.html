@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident Tracker</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .form-container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Incident Tracker</h1>
+
+        <!-- Incident Submission Form -->
+        <div class="form-container mb-5">
+            <h2>Submit a New Incident</h2>
+            <form action="/submit" method="POST">
+                <div class="mb-3">
+                    <label for="incident_title" class="form-label">Incident Title:</label>
+                    <input type="text" id="incident_title" name="incident_title" class="form-control" placeholder="Enter a title for the incident" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="incident_description" class="form-label">Incident Description:</label>
+                    <textarea id="incident_description" name="incident_description" class="form-control" rows="4" placeholder="Provide a detailed description" required></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="severity" class="form-label">Severity:</label>
+                    <select id="severity" name="severity" class="form-select" required>
+                        <option value="Critical">Critical</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="assigned_engineer" class="form-label">Assigned Engineer:</label>
+                    <select id="assigned_engineer" name="assigned_engineer" class="form-select" required>
+                        <option value="Engineer 1">Engineer 1</option>
+                        <option value="Engineer 2">Engineer 2</option>
+                        <option value="Engineer 3">Engineer 3</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="status" class="form-label">Status:</label>
+                    <select id="status" name="status" class="form-select" required>
+                        <option value="New">New</option>
+                        <option value="In Progress">In Progress</option>
+                        <option value="Resolved">Resolved</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </form>
+        </div>
+
+        <!-- Current Incident Log -->
+        <div class="table-responsive">
+            <h2>Current Incident Log</h2>
+            {% if incident %}
+            <table class="table table-bordered table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Severity</th>
+                        <th>Status</th>
+                        <th>Assigned Engineer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ incident.id }}</td>
+                        <td>{{ incident.title }}</td>
+                        <td>{{ incident.description }}</td>
+                        <td>{{ incident.category }}</td>
+                        <td>{{ incident.severity }}</td>
+                        <td>{{ incident.status }}</td>
+                        <td>{{ incident.assigned_to }}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Suggested Solutions -->
+            <h3>Suggested Solutions</h3>
+            {% if solutions %}
+            <ul class="list-group">
+                {% for solution in solutions %}
+                <li class="list-group-item">
+                    <strong>{{ solution.incident_title }}:</strong> {{ solution.solution }}
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p class="text-muted">No solutions available for this category yet.</p>
+            {% endif %}
+
+            {% else %}
+            <p class="text-muted">No incidents logged yet.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

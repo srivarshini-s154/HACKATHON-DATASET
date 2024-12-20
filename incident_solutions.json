@@ -1,0 +1,222 @@
+[
+    {
+        "category": "Network",
+        "incidents": [
+            {
+                "incident_title": "Network Connectivity Issues",
+                "severity": "Critical",
+                "solution": "Check cables, ensure routers are configured correctly, and restart equipment."
+            },
+            {
+                "incident_title": "Server Downtime",
+                "severity": "Critical",
+                "solution": "Check server logs, reboot the server, check network connectivity."
+            },
+            {
+                "incident_title": "Slow Internet Speed",
+                "severity": "High",
+                "solution": "Check network bandwidth, contact ISP, or troubleshoot local network settings."
+            },
+            {
+                "incident_title": "DNS Resolution Failures",
+                "severity": "Medium",
+                "solution": "Verify DNS settings, flush DNS cache, and check for network-wide DNS issues."
+            },
+            {
+                "incident_title": "Wi-Fi Connection Drops",
+                "severity": "Medium",
+                "solution": "Ensure Wi-Fi routers are in good condition and reset them, check device connection settings."
+            },
+            {
+                "incident_title": "VPN Not Connecting",
+                "severity": "High",
+                "solution": "Check VPN server status, verify authentication settings, and ensure client device settings are correct."
+            },
+            {
+                "incident_title": "Firewall Blocking Connections",
+                "severity": "High",
+                "solution": "Check firewall rules and logs, ensure correct ports are open for communication."
+            },
+            {
+                "incident_title": "Router Configuration Issues",
+                "severity": "High",
+                "solution": "Verify router configurations and ensure the firmware is up to date."
+            },
+            {
+                "incident_title": "Network Overload",
+                "severity": "Critical",
+                "solution": "Check network usage statistics, manage bandwidth allocation, and upgrade networking hardware if needed."
+            },
+            {
+                "incident_title": "Intrusion Detection System (IDS) False Alarms",
+                "severity": "Medium",
+                "solution": "Check IDS configurations and analyze logs for false positives, adjust detection parameters."
+            }
+        ]
+    },
+    {
+        "category": "Hardware",
+        "incidents": [
+            {
+                "incident_title": "Laptop Won’t Power On",
+                "severity": "Critical",
+                "solution": "Check the power cable, battery charge, and motherboard connections."
+            },
+            {
+                "incident_title": "Printer Not Printing",
+                "severity": "High",
+                "solution": "Check printer connection, ink levels, and ensure drivers are properly installed."
+            },
+            {
+                "incident_title": "Overheating Laptop",
+                "severity": "Medium",
+                "solution": "Check internal fans, clean dust, and ensure proper ventilation for the laptop."
+            },
+            {
+                "incident_title": "Broken Screen",
+                "severity": "Critical",
+                "solution": "Check for physical damage, and either repair or replace the screen."
+            },
+            {
+                "incident_title": "No Display on Monitor",
+                "severity": "High",
+                "solution": "Ensure monitor is turned on, check cable connections, and test with another monitor."
+            },
+            {
+                "incident_title": "Computer Making Noises",
+                "severity": "Medium",
+                "solution": "Check internal hardware components, ensure fans are not clogged, and look for any loose parts."
+            },
+            {
+                "incident_title": "Keyboard Not Responding",
+                "severity": "Low",
+                "solution": "Check the keyboard connection, replace batteries, or test with a different keyboard."
+            },
+            {
+                "incident_title": "USB Ports Not Working",
+                "severity": "Medium",
+                "solution": "Check USB settings in BIOS, reinstall drivers, or test with different devices."
+            },
+            {
+                "incident_title": "External Hard Drive Not Recognized",
+                "severity": "High",
+                "solution": "Check the cable connection, test the drive on another computer, or replace the drive if necessary."
+            },
+            {
+                "incident_title": "Bluetooth Not Connecting",
+                "severity": "Low",
+                "solution": "Check Bluetooth settings, ensure device is discoverable, and restart both devices."
+            }
+        ]
+    },
+    {
+        "category": "Software",
+        "incidents": [
+            {
+                "incident_title": "Software Crashes Frequently",
+                "severity": "Critical",
+                "solution": "Update software to the latest version, check for conflicts with other applications."
+            },
+            {
+                "incident_title": "Application Won’t Open",
+                "severity": "High",
+                "solution": "Ensure the application is properly installed, check for updates, and review error logs."
+            },
+            {
+                "incident_title": "File Corruption",
+                "severity": "Critical",
+                "solution": "Use file recovery software, restore from backups, and check system for hardware issues."
+            },
+            {
+                "incident_title": "Software Update Failed",
+                "severity": "Medium",
+                "solution": "Check internet connection, verify permissions, and ensure the device is running the correct OS version."
+            },
+            {
+                "incident_title": "License Activation Issues",
+                "severity": "High",
+                "solution": "Check activation key, ensure it’s correct, and verify software installation."
+            },
+            {
+                "incident_title": "Security Vulnerabilities in Application",
+                "severity": "Critical",
+                "solution": "Apply the latest security patches, update to the latest software version."
+            },
+            {
+                "incident_title": "Application Not Responding",
+                "severity": "Medium",
+                "solution": "End the application in Task Manager, restart the computer, or reinstall the software."
+            },
+            {
+                "incident_title": "Slow Software Performance",
+                "severity": "Low",
+                "solution": "Close unnecessary programs, increase system memory, or reinstall the software."
+            },
+            {
+                "incident_title": "Compatibility Issues with OS",
+                "severity": "Medium",
+                "solution": "Check if the software is compatible with your operating system version."
+            },
+            {
+                "incident_title": "Software Permissions Issue",
+                "severity": "Low",
+                "solution": "Check software permissions in the control panel and reset them if necessary."
+            }
+        ]
+    },
+    {
+        "category": "Security",
+        "incidents": [
+            {
+                "incident_title": "Unauthorized Access Detected",
+                "severity": "Critical",
+                "solution": "Change passwords, check user access logs, and revoke unauthorized access."
+            },
+            {
+                "incident_title": "Malware Infection",
+                "severity": "Critical",
+                "solution": "Run antivirus software, disconnect from the network, and remove malware."
+            },
+            {
+                "incident_title": "Data Breach",
+                "severity": "Critical",
+                "solution": "Notify stakeholders, assess the scope of the breach, and implement security measures."
+            },
+            {
+                "incident_title": "Phishing Attack",
+                "severity": "Medium",
+                "solution": "Educate users, check emails for suspicious links, and update email security settings."
+            },
+            {
+                "incident_title": "Ransomware Attack",
+                "severity": "Critical",
+                "solution": "Isolate the infected system, restore from backups, and contact cybersecurity experts."
+            },
+            {
+                "incident_title": "Weak Passwords",
+                "severity": "Medium",
+                "solution": "Encourage users to use strong passwords, enable multi-factor authentication."
+            },
+            {
+                "incident_title": "Security Vulnerability in Software",
+                "severity": "High",
+                "solution": "Apply security patches immediately and monitor the system for further vulnerabilities."
+            },
+            {
+                "incident_title": "DDoS Attack",
+                "severity": "Critical",
+                "solution": "Use DDoS protection services, reconfigure network defenses, and analyze attack traffic."
+            },
+            {
+                "incident_title": "VPN Connection Compromised",
+                "severity": "High",
+                "solution": "Change VPN credentials, check for any suspicious activity, and secure VPN connections."
+            },
+            {
+                "incident_title": "Unpatched Security Flaws",
+                "severity": "High",
+                "solution": "Install security patches for software and monitor systems for potential threats."
+            }
+        ]
+    }
+]

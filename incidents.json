@@ -1,0 +1,8 @@
+[
+    {
+        "title": "Network Outage",
+        "description": "server crash and network is down",
+        "severity": "High",
+        "category": "Network Issue"
+    }
+]

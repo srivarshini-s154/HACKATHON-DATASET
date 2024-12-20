@@ -1,0 +1,235 @@
+{
+    "incident_solutions": [
+      {
+        "incident_type": "Network Outage",
+        "description": "A complete network outage affecting multiple users in a region.",
+        "resolution_steps": [
+          {
+            "step": 1,
+            "action": "Identify the network nodes affected by the outage.",
+            "details": "Using network monitoring tools, pinpoint the location of the outage and check for any common failure points."
+          },
+          {
+            "step": 2,
+            "action": "Check for power failure or hardware issues.",
+            "details": "Ensure that all network equipment is properly powered and not showing hardware failures."
+          },
+          {
+            "step": 3,
+            "action": "Reset network devices.",
+            "details": "Reboot routers, switches, and any intermediate devices to clear any temporary errors."
+          },
+          {
+            "step": 4,
+            "action": "Verify connectivity after reset.",
+            "details": "After rebooting devices, test the connectivity to ensure the issue is resolved."
+          }
+        ],
+        "possible_causes": [
+          "Power failure",
+          "Hardware malfunction",
+          "Configuration issues"
+        ],
+        "preventive_measures": [
+          "Regular network health checks",
+          "Redundant power supplies",
+          "Scheduled maintenance and firmware updates"
+        ],
+        "questionnaire": [
+          {
+            "question": "Are all network devices powered on and functioning properly?",
+            "response_options": ["Yes", "No"]
+          },
+          {
+            "question": "Have there been any recent firmware updates or configuration changes?",
+            "response_options": ["Yes", "No"]
+          }
+        ]
+      },
+      {
+        "incident_type": "Database Downtime",
+        "description": "The database is down, causing issues with data retrieval and transactions.",
+        "resolution_steps": [
+          {
+            "step": 1,
+            "action": "Verify if the database service is running.",
+            "details": "Check the status of the database service and restart it if necessary."
+          },
+          {
+            "step": 2,
+            "action": "Check for any recent database updates or migrations.",
+            "details": "Ensure that no recent changes or migrations have caused the downtime."
+          },
+          {
+            "step": 3,
+            "action": "Inspect database logs for errors.",
+            "details": "Look for any error messages in the database logs that could point to the root cause of the downtime."
+          },
+          {
+            "step": 4,
+            "action": "Restore from backup if required.",
+            "details": "If the issue cannot be resolved, restore the database from the latest backup to minimize downtime."
+          }
+        ],
+        "possible_causes": [
+          "Database service crash",
+          "Configuration issues",
+          "Insufficient resources"
+        ],
+        "preventive_measures": [
+          "Regular database health checks",
+          "Automated backups",
+          "Proper resource allocation"
+        ],
+        "questionnaire": [
+          {
+            "question": "Is the database service running and responsive?",
+            "response_options": ["Yes", "No"]
+          },
+          {
+            "question": "Were there any recent changes made to the database (e.g., updates, migrations)?",
+            "response_options": ["Yes", "No"]
+          }
+        ]
+      },
+      {
+        "incident_type": "Security Breach",
+        "description": "Unauthorized access to critical systems or data.",
+        "resolution_steps": [
+          {
+            "step": 1,
+            "action": "Identify the source of the breach.",
+            "details": "Check security logs to trace the unauthorized access and pinpoint the breach's origin."
+          },
+          {
+            "step": 2,
+            "action": "Contain the breach.",
+            "details": "Isolate affected systems to prevent further damage or unauthorized access."
+          },
+          {
+            "step": 3,
+            "action": "Strengthen security measures.",
+            "details": "Change passwords, implement multi-factor authentication, and ensure firewall rules are updated."
+          },
+          {
+            "step": 4,
+            "action": "Monitor for additional breaches.",
+            "details": "Use intrusion detection systems to continuously monitor for further suspicious activity."
+          }
+        ],
+        "possible_causes": [
+          "Weak passwords",
+          "Unpatched vulnerabilities",
+          "Phishing attacks"
+        ],
+        "preventive_measures": [
+          "Regular security audits",
+          "Multi-factor authentication",
+          "Timely software updates"
+        ],
+        "questionnaire": [
+          {
+            "question": "Was unauthorized access detected in any system?",
+            "response_options": ["Yes", "No"]
+          },
+          {
+            "question": "Has multi-factor authentication been enabled on critical systems?",
+            "response_options": ["Yes", "No"]
+          }
+        ]
+      },
+      {
+        "incident_type": "System Failure",
+        "description": "A critical system failure preventing operations.",
+        "resolution_steps": [
+          {
+            "step": 1,
+            "action": "Identify the affected system.",
+            "details": "Use system monitoring tools to determine which components are malfunctioning."
+          },
+          {
+            "step": 2,
+            "action": "Check system logs for errors.",
+            "details": "Look for any system error messages or logs that could indicate the root cause."
+          },
+          {
+            "step": 3,
+            "action": "Restart the system.",
+            "details": "Perform a reboot to clear temporary errors or resource exhaustion."
+          },
+          {
+            "step": 4,
+            "action": "Resolve underlying issues.",
+            "details": "If the system continues to fail, investigate and fix any software or hardware issues."
+          }
+        ],
+        "possible_causes": [
+          "Software bugs",
+          "Hardware failure",
+          "Overloaded resources"
+        ],
+        "preventive_measures": [
+          "Regular system health checks",
+          "Proper resource allocation",
+          "Timely updates and patches"
+        ],
+        "questionnaire": [
+          {
+            "question": "Did the system log any errors leading to the failure?",
+            "response_options": ["Yes", "No"]
+          },
+          {
+            "question": "Have hardware or software resources been fully allocated?",
+            "response_options": ["Yes", "No"]
+          }
+        ]
+      },
+      {
+        "incident_type": "Application Bug",
+        "description": "A bug in an application preventing normal functionality.",
+        "resolution_steps": [
+          {
+            "step": 1,
+            "action": "Replicate the issue.",
+            "details": "Try to reproduce the error in a testing environment to better understand the bug."
+          },
+          {
+            "step": 2,
+            "action": "Review the application code.",
+            "details": "Identify any issues in the code that may be causing the malfunction."
+          },
+          {
+            "step": 3,
+            "action": "Fix the bug in the code.",
+            "details": "Correct the identified issue and test the fix thoroughly."
+          },
+          {
+            "step": 4,
+            "action": "Deploy the fix to production.",
+            "details": "After successful testing, deploy the fix to the live environment."
+          }
+        ],
+        "possible_causes": [
+          "Coding errors",
+          "Improper handling of user input",
+          "Compatibility issues"
+        ],
+        "preventive_measures": [
+          "Code reviews",
+          "Unit testing",
+          "Cross-browser testing"
+        ],
+        "questionnaire": [
+          {
+            "question": "Have the application logs indicated any specific error or bug?",
+            "response_options": ["Yes", "No"]
+          },
+          {
+            "question": "Has the bug been reproduced in the testing environment?",
+            "response_options": ["Yes", "No"]
+          }
+        ]
+      }
+    ]
+  }
+  
