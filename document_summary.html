@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Incident Summary</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
+        .document {
+            width: 100%; 
+            max-width: 800px; /* Limit the width for better readability */
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a modern look */
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            margin: 10px 0;
+            color: #555;
+        }
+        .section-header {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+        .divider {
+            margin: 20px 0;
+            height: 1px;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="document">
+        <h1>Incident Report</h1>
+        <h2>{{ incident.title }}</h2>
+        <p><strong>Description:</strong> {{ incident.description }}</p>
+        <p><strong>Category:</strong> {{ incident.category }}</p>
+        <p><strong>Severity:</strong> {{ incident.severity }}</p>
+        <p><strong>Status:</strong> {{ incident.status }}</p>
+        <p><strong>Assigned To:</strong> {{ incident.assigned_to }}</p>
+
+        <div class="divider"></div>
+
+        <h2>Resolution Summary</h2>
+        <p>{{ summary }}</p>
+    </div>
+</body>
+</html>

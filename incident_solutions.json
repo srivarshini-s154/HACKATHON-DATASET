@@ -58,7 +58,7 @@
         "category": "Hardware",
         "incidents": [
             {
-                "incident_title": "Laptop Won’t Power On",
+                "incident_title": "Laptop Wont Power On",
                 "severity": "Critical",
                 "solution": "Check the power cable, battery charge, and motherboard connections."
             },
@@ -135,7 +135,7 @@
             {
                 "incident_title": "License Activation Issues",
                 "severity": "High",
-                "solution": "Check activation key, ensure it’s correct, and verify software installation."
+                "solution": "Check activation key, ensure its correct, and verify software installation."
             },
             {
                 "incident_title": "Security Vulnerabilities in Application",
@@ -216,6 +216,61 @@
                 "incident_title": "Unpatched Security Flaws",
                 "severity": "High",
                 "solution": "Install security patches for software and monitor systems for potential threats."
+            }
+        ]
+    },
+    {
+        "category": "Performance",
+        "incidents": [
+            {
+                "incident_title": "Slow System Performance",
+                "severity": "High",
+                "solution": "Check for background processes consuming resources, optimize startup programs, and increase RAM or CPU capacity if necessary."
+            },
+            {
+                "incident_title": "Lag in Application",
+                "severity": "Medium",
+                "solution": "Ensure the application is updated, clear cache, close unused programs, and check for hardware bottlenecks."
+            },
+            {
+                "incident_title": "High CPU Usage",
+                "severity": "Critical",
+                "solution": "Check for resource-hungry processes, close unnecessary programs, update drivers, and ensure proper cooling for the system."
+            },
+            {
+                "incident_title": "Slow Boot Times",
+                "severity": "Medium",
+                "solution": "Disable unnecessary startup programs, run disk cleanup, and check for disk errors."
+            },
+            {
+                "incident_title": "Memory Leaks",
+                "severity": "Critical",
+                "solution": "Identify the application causing the memory leak using task manager, update or reinstall the software, and ensure proper system configuration."
+            },
+            {
+                "incident_title": "Slow Network Speeds",
+                "severity": "High",
+                "solution": "Check network cable connections, optimize router settings, ensure firmware is updated, and contact ISP if the issue persists."
+            },
+            {
+                "incident_title": "High Disk Usage",
+                "severity": "High",
+                "solution": "Run disk cleanup, remove unnecessary files, check for malware, and consider upgrading to a larger hard drive or SSD."
+            },
+            {
+                "incident_title": "Application Freezes",
+                "severity": "Medium",
+                "solution": "End unresponsive application from task manager, check for system updates, and reinstall the application if necessary."
+            },
+            {
+                "incident_title": "Slow Database Queries",
+                "severity": "High",
+                "solution": "Optimize database indexes, check for inefficient queries, and ensure the database server is properly configured."
+            },
+            {
+                "incident_title": "Server Performance Issues",
+                "severity": "Critical",
+                "solution": "Check server logs for errors, ensure sufficient hardware resources, optimize software configurations, and scale up infrastructure if necessary."
             }
         ]
     }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Update Incident Documentation</h1>
+
+        {% if incident %}
+        <h2>Current Incident</h2>
+        <table class="table table-bordered">
+            <tr><th>Title</th><td>{{ incident.title }}</td></tr>
+            <tr><th>Description</th><td>{{ incident.description }}</td></tr>
+            <tr><th>Category</th><td>{{ incident.category }}</td></tr>
+            <tr><th>Severity</th><td>{{ incident.severity }}</td></tr>
+            <tr><th>Status</th><td>{{ incident.status }}</td></tr>
+            <tr><th>Assigned Engineer</th><td>{{ incident.assigned_to }}</td></tr>
+        </table>
+        {% endif %}
+
+        {% if questionnaire %}
+        <h2>Incident Resolution Details</h2>
+        <form method="POST">
+            {% for question in questionnaire %}
+            <div class="mb-4">
+                <label for="question_{{ loop.index0 }}" class="form-label"><strong>{{ loop.index }}. {{ question }}</strong></label>
+                <textarea class="form-control" id="question_{{ loop.index0 }}" name="question_{{ loop.index0 }}" rows="3" required></textarea>
+            </div>
+            {% endfor %}
+            <button type="submit" class="btn btn-primary">Submit Documentation</button>
+        </form>
+        {% else %}
+            <p>No questionnaire found for this incident.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

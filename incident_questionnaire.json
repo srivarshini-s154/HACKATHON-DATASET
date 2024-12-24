@@ -1,0 +1,92 @@
+[
+    {
+      "category": "Network",
+      "questions": [
+        "How was the network connectivity issue initially detected (e.g., user reports, monitoring alerts)?",
+        "What diagnostic tools (e.g., `ping`, `traceroute`, network monitoring software) were used to isolate the problem?",
+        "What specific network devices (e.g., routers, switches, firewalls) were investigated or modified?",
+        "What configuration changes were made to resolve the issue (e.g., IP addresses, DNS settings, firewall rules)?",
+        "How was the root cause of the network outage identified (e.g., faulty hardware, misconfiguration, external attack)?",
+        "What steps were taken to restore network service (e.g., restarting devices, replacing cables, applying patches)?",
+        "How was the resolution verified (e.g., testing connectivity, monitoring network traffic)?",
+        "What preventative measures were implemented to prevent similar incidents in the future (e.g., firmware updates, configuration backups, improved monitoring)?",
+        "How long did the network outage last, and what was the impact on business operations?",
+        "How was the resolution communicated to affected users or stakeholders?"
+      ]
+    },
+    {
+      "category": "Hardware",
+      "questions": [
+        "What specific hardware component was identified as failing (e.g., hard drive, RAM, motherboard)?",
+        "What diagnostic tests or procedures were used to confirm the hardware failure?",
+        "What steps were taken to replace the faulty hardware (e.g., ordering replacement parts, scheduling downtime, physical installation)?",
+        "Were any drivers, firmware, or software updates required after the hardware replacement?",
+        "How was the replacement hardware tested to ensure proper functionality?",
+        "What was the cause of the hardware failure (e.g., age, physical damage, manufacturing defect)?",
+        "What was the total downtime caused by the hardware issue, and what was the impact on business operations?",
+        "What steps were taken to minimize data loss or service disruption during the hardware replacement?",
+        "How was the resolution communicated to affected users or stakeholders?",
+        "What preventative maintenance or monitoring procedures were implemented to avoid future hardware failures?"
+      ]
+    },
+    {
+      "category": "Software",
+      "questions": [
+        "What specific software application or system was experiencing issues (e.g., operating system, web application, database)?",
+        "What symptoms or error messages were observed that indicated a software problem?",
+        "What troubleshooting steps were taken to diagnose the issue (e.g., checking logs, debugging code, testing different configurations)?",
+        "What specific code changes, patches, or updates were applied to resolve the software issue?",
+        "How was the resolution tested to ensure the software was functioning correctly?",
+        "What was the root cause of the software problem (e.g., bug in the code, configuration error, compatibility issue)?",
+        "What was the impact of the software issue on users or business processes?",
+        "What rollback or recovery procedures were in place in case the resolution failed?",
+        "How was the resolution communicated to affected users or stakeholders?",
+        "What preventative measures were implemented to avoid similar software issues in the future (e.g., code reviews, automated testing, improved monitoring)?"
+      ]
+    },
+    {
+      "category": "Security",
+      "questions": [
+        "How was the security incident detected (e.g., intrusion detection system alerts, user reports, vulnerability scans)?",
+        "What type of security incident occurred (e.g., malware infection, phishing attack, denial-of-service attack)?",
+        "What steps were taken to contain the security incident and prevent further damage?",
+        "What systems or data were affected by the security incident?",
+        "What forensic analysis was conducted to determine the scope and impact of the incident?",
+        "What vulnerabilities were exploited in the security incident?",
+        "What security patches, updates, or configuration changes were implemented to address the vulnerabilities?",
+        "What steps were taken to recover any lost or compromised data?",
+        "How was the incident communicated to affected users, stakeholders, or regulatory authorities?",
+        "What preventative measures were implemented to improve security posture and prevent future incidents?"
+      ]
+    },
+    {
+      "category": "Performance",
+      "questions": [
+        "What performance issues were observed (e.g., slow response times, high latency, resource exhaustion)?",
+        "What monitoring tools or techniques were used to diagnose the performance problem?",
+        "What specific systems or components were identified as contributing to the performance bottleneck?",
+        "What configuration changes, optimizations, or upgrades were implemented to improve performance?",
+        "How was the performance improvement measured and verified?",
+        "What was the root cause of the performance issue (e.g., insufficient hardware resources, inefficient code, network congestion)?",
+        "What was the impact of the performance issue on users or business operations?",
+        "What capacity planning or scaling measures were implemented to prevent future performance issues?",
+        "How was the resolution communicated to affected users or stakeholders?",
+        "What ongoing monitoring or performance tuning procedures were put in place?"
+      ]
+    },
+      {
+      "category": "Others",
+      "questions": [
+        "What was the nature of the incident?",
+        "How was the incident initially reported or discovered?",
+        "What immediate actions were taken to address the incident?",
+        "What resources or personnel were involved in resolving the incident?",
+        "What were the key challenges encountered during the incident resolution process?",
+        "What was the overall timeline for resolving the incident?",
+        "What was the impact of the incident on users or business operations?",
+        "What lessons were learned from the incident?",
+        "How was the resolution communicated to affected parties?",
+        "What preventative measures can be taken to avoid similar incidents in the future?"
+      ]
+    }
+  ]
